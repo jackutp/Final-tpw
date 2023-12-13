@@ -1,0 +1,24 @@
+/* Estilos para los iconos */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.social-icon {
+    margin: 5px 20px;
+    transition: transform 0.3s, opacity 0.3s;
+    text-align: center;
+    display: block;
+}
+
+.social-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.social-icon:hover {
+    transform: scale(2.3);
+    opacity: 1;
+}

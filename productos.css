@@ -1,0 +1,57 @@
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin:  auto;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #8fd819;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(203, 181, 223);
+    border-radius: 10px;
+    padding: 90px;
+
+}
+button {
+    padding: 10px 20px;
+    background-color: #ab4493;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuadro{
+    background-image: url('https://media.istockphoto.com/id/1343399874/es/v%C3%ADdeo/l%C3%ADneas-de-ne%C3%B3n-azul-y-p%C3%BArpura-en-humo-sobre-el-fondo-negro.jpg?s=640x640&k=20&c=5ekQuJ66KoKVARDhi8fLQ3GSYDP-xQsZcJiQGlFIrxI=');
+    background-size: cover;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+li a:hover{
+    transform: scale(1.2);
+}

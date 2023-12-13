@@ -1,0 +1,64 @@
+/* Utilizando Roboto como fuente para todo el texto */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Utilizando Lato como fuente para encabezados (h1, h2, etc.) */
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Utilizando Montserrat para elementos específicos */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Cambiar el tamaño de fuente y color */
+h2 {
+    font-size: 25px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(188, 129, 243);
+    overflow: hidden;
+}
+ul.nav-menu li {
+    float: right;
+}
+ul.nav-menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.nav-menu li a:hover {
+    background-color: rgb(134, 106, 160); 
+}
+
+.container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.section {
+    flex-basis: 48%;
+    padding: 20px;
+    border: 1px solid #251f1f;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.section img {
+    max-width: 100%;
+}

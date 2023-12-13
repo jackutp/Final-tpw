@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contactanos</title>
+        <link rel="stylesheet" type="text/css" href="alo.css">
+        <link rel="stylesheet" href="contactanos.css">
+        <link rel="stylesheet" type="text/css" href="redes.css">
+    </head>
+    <body>
+        
+        <ul class="mimenu">
+          <li><a href="crud/CSS/login.html">login</a></li>
+            <li><a href="crud/index.php">Registrarse</a></li>
+            <li><a href="crud/registrados.php">Registrados</a></li>
+            <li><a href="contactanos.html">Cont&aacute;ctenos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
+        </ul>
+    </body>
+    <body>  
+    
+      <div class="contact_form">
+        <div class="formulario">      
+          <h1>&iquest;NECESITA AYUDA? ESCR&Iacute;BANOS</h1>
+            <h3>Contactanos y en breve nos pondremos en contacto contigo</h3>    
+                    
+                    <form action="submeter-formulario.php" method="post" onsubmit="return mostrarAlerta();">
+                      <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                      </p>
+      
+                      <p>
+                          <label for="apellido" class="colocar_apellido">Apellido
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
+                      </p>
+      
+                      <p>
+                          <label for="registroRegion">Departamento<span class="registro__obligatorio">*</span></label>
+                          <p></p>
+                                          <select name="regionSelect" id="registroRegion" required="obligatorio" placeholder="Elige tu departamento">
+                                              
+                                              <option disabled selected value> seleccione </option>
+                                                  <option value="17">Ayacucho</option>
+                                              
+                                                  <option value="18">Cajamarca</option>
+                                              
+                                                  <option value="19">Callao</option>
+                                              
+                                                  <option value="20">Cusco</option>
+                                              
+                                                  <option value="21">Huancavelica</option>
+                                              
+                                                  <option value="22">Huanuco</option>
+                                              
+                                                  <option value="23">Ica</option>
+                                              
+                                                  <option value="24">Jun&iacute;n</option>
+                                              
+                                                  <option value="25">La Libertad</option>
+                                              
+                                                  <option value="26">Lambayeque</option>
+                                              
+                                                  <option value="27">Lima</option>
+                                              
+                                                  <option value="28">Loreto</option>
+                                              
+                                                  <option value="29">Madre de Dios</option>
+                                              
+                                                  <option value="30">Moquegua</option>
+                                              
+                                                  <option value="31">Pasco</option>
+                                              
+                                                  <option value="32">Piura</option>
+                                              
+                                                  <option value="33">Puno</option>
+                                              
+                                                  <option value="34">San Mart&iacute;n</option>
+                                              
+                                                  <option value="35">Tacna</option>
+                                              
+                                                  <option value="36">Tumbes</option>
+                                              
+                                                  <option value="37">Ucayali</option>
+                                              
+                                                  <option value="38">Amazonas</option>
+                                              
+                                                  <option value="39">Ancash</option>
+                                              
+                                                  <option value="40">Apurimac</option>
+                                              
+                                                  <option value="41">Arequipa</option>
+                                               
+                                          </select>
+                      </p>
+      
+                      <p>
+                          <label for="provincia" class="colocar_provincia">Provincia
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_provincia" id="provincia" required="obligatorio" placeholder="Escribe tu provincia">
+                      </p>
+      
+                      <p>
+                          <label for="razon social" class="colocar_raz&oacute;n">Raz&oacute;n Social
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_raz&oacute;n" id="raz&oacute;n" required="obligatorio" placeholder="Escribe tu raz&oacute;n Social">
+                      </p>
+                    
+                      <p>
+                        <label for="email" class="colocar_email">Correo Electr&oacute;nico
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                      </p>
+                  
+                      <p>
+                        <label for="telefone" class="colocar_telefono">Tel&eacute;fono
+                        </label>
+                          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu telefono">
+                      </p>  
+                      <p>
+                          <label for="asunto">Asunto*</label>
+                                  <input name="registroAsunto" type="hidden" ng-value="asuntoHide">
+                                  <select ng-model="registroAsunto" id="registroAsunto" data-required-error="Selecciona un elemento de la lista" required ng-change="asuntoHide = registroAsunto;">
+                                      <option disabled selected value> seleccione... </option>
+                                      <option value="Solicitud Renting">Solicitud Renting</option>
+                                      <option value="Quiero alquilar mi maquinaria">Quiero Alquilar mi Maquinaria</option>	
+                                      <option value="Asistencia Comercial Arriendo">Asistencia Comercial Alquiler </option>
+                                      <option value="Asistencia Comercial Venta Usados">Asistencia Comercial Venta Usados</option>
+                                      <option value="Asistencia T&eacute;cnica">Asistencia T&eacute;cnica</option>
+                                      <option value="Reclamos">Reclamos</option>
+                                      <option value="Sugerencias">Sugerencias</option>
+                                      <option value="Consultas">Consultas</option>
+                                  </select>
+                      </p>  
+                       
+                    
+                      <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                          <span class="obligatorio">*</span>
+                        </label>                     
+                          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aqui tu comentario..."></textarea> 
+                      </p>
+                      <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                  </form>      
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                  
+                </p>  
+              </form>
+              <script>
+                function mostrarAlerta() {
+                alert("El formulario se ha enviado correctamente.");
+                location.reload(); // Esto recargará la página actual sin mostrar una ventana emergente
+                return false; // Esto evita que el formulario se envíe normalmente
+                }
+              </script>
+                
+        </div>
+      </div>
+    </body>
+
+    <body>
+      <div class="social-icons">
+          <a href="https://www.facebook.com" class="social-icon">
+              <img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com" class="social-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter">
+          </a>
+          <a href="https://www.youtube.com" class="social-icon">
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-icon.png" alt="YouTube">
+          </a>
+          <a href="https://www.whatsapp.com" class="social-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384023.png" alt="WhatsApp">
+          </a>
+      </div>
+  </body>
+</html>
